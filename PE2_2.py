@@ -13,5 +13,12 @@ print(bal+dep)
 #Part C
 a = 2
 b = 3
-#a+b = c <----- Incorrect 
+#a+b = c <----- Incorrect (c must be defined prior to print())
+c = a + b
 print(c)
+
+#Part D
+txt = 'hi'
+num = 123
+#print(txt+num) <------- Incorrect (can only concatenate str to str, not int to str)
+print(txt + "123") 

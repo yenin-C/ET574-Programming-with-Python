@@ -59,6 +59,7 @@ company = email.split('@')[1]
 print(email[-30:30])
 #Use slicing and string methods to print only the user name all in lowercase. (Did not use lower() because email is already in lower case):
 print(username)
+print(email[0:-12])
 #Use slicing and string methods to print only the company name all in uppercase:
 print(company.upper()) 
 

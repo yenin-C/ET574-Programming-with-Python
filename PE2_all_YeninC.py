@@ -30,7 +30,7 @@ print(c)
 txt = 'hi'
 num = 123
 #print(txt+num) <------- Incorrect (can only concatenate str to str, not int to str)
-print(txt + "123") 
+print(txt + " 123") 
 
 #3 Write one line of code for each step a - h | All string text values should be lower case. Use string methods to change cases
 
@@ -73,3 +73,13 @@ print('   *********')
 print('  ***********')
 print(' *************')
 print('***************')
+
+#Triangle using functions and loop | chatgpt assisted, still not quite understand though xD
+
+def print_perfect_triangle(char, rows):
+    for i in range(1, rows + 1):
+        print(' ' * (rows - i) + char * (2 * i - 1))
+
+print_perfect_triangle('*', 8)
+
+print(print_perfect_triangle)

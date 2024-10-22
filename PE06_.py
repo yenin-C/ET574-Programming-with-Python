@@ -45,10 +45,10 @@ age = int(input ("Please tell me your correct age:"))
 if age < 0:
     print("Invalid age")
     age = int(input ("Please tell me your correct age:"))
-elif age < 2:
+elif age >= 2 and age < 4:
     print("You\'re a baby")
     age = int(input ("Please tell me your correct age:"))
-elif age <= 4:
+elif age >= 4 and age < 13:
     print("You\'re a toddler")
     age = int(input ("Please tell me your correct age:"))
 elif age < 13:

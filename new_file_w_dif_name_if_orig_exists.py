@@ -19,19 +19,18 @@ with open(filename, 'x') as file_object:
 
 import os
 
-def create_unique_filename(filename):
+def create_new_file(filename):
     base, ext = os.path.splitext(filename)
     counter = 1
-    # Loop to find a unique filename
+
     while os.path.exists(filename):
         filename = f"{base}_{counter}{ext}"
         counter += 1
     return filename
 
-filename = 'creating_a_new_file.txt'
-unique_filename = create_unique_filename(filename)
+filename = 'UN.txt'
+unique_filename = create_new_file(filename)
 
-# Now create and write to the unique filename
 with open(unique_filename, 'x') as file_object:
     file_object.write("This is some new content\n")
 
